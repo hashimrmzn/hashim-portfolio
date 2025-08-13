@@ -59,10 +59,25 @@ clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80
 }
 
 /*responsive css*/
+
+@media (max-width: 1024px) {
+  .Hero-sec{
+padding-top: 200px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .my-pic {
+   width: 300px !important;
+    height: 300px !important;
+  }
+}
 @media (max-width: 768px) {
   .my-pic {
-    margin-top: 30px;
-    width: 250px !important;
-    height: 250px !important;
+    width: 90% !important;
+    height: 300px !important;
+  }
+   .Hero-sec{
+padding-top: 150px !important;
   }
 }

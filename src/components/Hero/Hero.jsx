@@ -51,16 +51,14 @@ function Hero() {
         component="section"
         sx={{
           alignContent: "end",
-          minHeight: "100vh", // default
+          minHeight: "auto", // default
           pt: 10,
-          "@media (max-width:1024px) and (min-width:768px)": {
-            minHeight: "55vh !important"
-          },
-          "@media (max-width:76px)": {
+          "@media (min-width:1280px)": {
             minHeight: "100vh"
           }
         }}
       >
+
 
         <div
           style={{ maxWidth: "1440px", margin: "0 auto" }}
