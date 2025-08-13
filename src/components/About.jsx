@@ -9,7 +9,6 @@ function About() {
                 component="section"
                 sx={{
                     alignContent: "center",
-                    minHeight: "100vh",
                     pt: 10
                 }}
             >
@@ -17,7 +16,11 @@ function About() {
                     className='container'
                 >
                     <Stack
-                        direction={{ xs: "column", sm: "row" }}
+                        direction={{
+                            xs: "column", 
+                            sm: "column", 
+                            md: "row"     
+                        }}
                         justifyContent="space-between"
                         alignItems="center"
                         spacing={2}
@@ -31,7 +34,7 @@ function About() {
                             }}>
                                 <img
                                     className='about-img'
-                                    data-aos="fade-down-right"
+                                    data-aos="fade-right"
                                     src={aboutimage}
                                     alt="Who I am"
                                     style={{
@@ -48,14 +51,17 @@ function About() {
                         </Stack>
 
                         <Stack sx={{ flex: 1, p: 3 }}>
-                            <Box>
+                            <Box
+                                data-aos="fade-left"
+                            >
+
 
                                 <Typography
-                                    data-aos="fade-up"
 
-                                    variant='h1'
+
+                                    variant='h2'
                                     sx={{
-                                        fontSize: "3rem",
+                                        fontSize: "2.2rem",
                                         textAlign: "start",
                                         color: "var( --main-primary-color)"
                                     }}
@@ -63,11 +69,11 @@ function About() {
                                     About Me
                                 </Typography>
                                 <Typography
-                                    data-aos="fade-up"
+
 
                                     variant='h3'
                                     sx={{
-                                        fontSize: "2rem",
+                                        fontSize: "1.7rem",
                                         mt: '20px',
                                         textAlign: "start",
                                         color: "#fff"
@@ -76,12 +82,12 @@ function About() {
                                     I am Muhammad Hashim.
                                 </Typography>
                                 <Typography
-                                    data-aos="fade-up"
+
 
                                     variant="body1"
                                     component="p"
                                     sx={{
-                                        fontSize: "1.2rem",
+                                        fontSize: "1rem",
                                         mt: "20px",
                                         textAlign: "start",
                                     }}
@@ -89,12 +95,12 @@ function About() {
                                     I’m a passionate Web Developer with 2 years of professional experience specializing in WordPress development and frontend engineering.
                                 </Typography>
                                 <Typography
-                                    data-aos="fade-up"
+
 
                                     variant="body1"
                                     component="p"
                                     sx={{
-                                        fontSize: "1.2rem",
+                                        fontSize: "1rem",
                                         mt: "20px",
                                         textAlign: "start",
                                     }}
@@ -103,12 +109,12 @@ function About() {
                                 </Typography>
 
                                 <Typography
-                                    data-aos="fade-up"
+
 
                                     variant="body1"
                                     component="p"
                                     sx={{
-                                        fontSize: "1.2rem",
+                                        fontSize: "1rem",
                                         mt: "20px",
                                         textAlign: "start",
                                     }}

@@ -54,3 +54,14 @@ h2,h3,h4,h5,h6,p{
   background-color: #181818;
   box-shadow: 0 2px 8px #ffb400;
 }
+.my-pic {
+clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
+/*responsive css*/
+@media (max-width: 768px) {
+  .my-pic {
+    width: 90% !important;
+    height: auto;
+  }
+}
