@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70" height="70" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" aria-label="Bootstrap icon">
+  <g fill="none" stroke="#ffb400" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Outer rounded square -->
+    <rect x="10" y="10" width="50" height="50" rx="8" ry="8"/>
+    <!-- Letter B stylized -->
+    <path d="M28 22 H38 C42 22 45 25 45 28 C45 31 42 34 38 34 H28 Z"/>
+    <path d="M28 34 H39 C43 34 46 37 46 40 C46 43 43 46 39 46 H28 Z"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+.yellowcutbg{
+    background-color: var( --main-primary-color);
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    bottom: 0;
+    z-index: 0;
+     clip-path: polygon(0 0, 100% 60%, 100% 100%, 0% 100%);
+}

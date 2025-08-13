@@ -1,0 +1,23 @@
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.slider {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.sliderTrack {
+  display: flex;
+  animation: scroll 15s linear infinite;
+}
+
+.slide {
+  flex: 0 0 auto;
+  min-width: 150px;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  color: #ffb400;
+}

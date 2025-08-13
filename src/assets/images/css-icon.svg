@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70" height="70" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" aria-label="CSS icon">
+  <g stroke="#ffb400" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="15" y="15" width="40" height="40" rx="4" ry="4"/> <!-- Box -->
+    <path d="M23 28 H47"/> <!-- Top bar -->
+    <path d="M23 36 H47"/> <!-- Middle bar -->
+    <path d="M23 44 H47"/> <!-- Bottom bar -->
+  </g>
+</svg>

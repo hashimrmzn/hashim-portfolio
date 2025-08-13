@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70" height="70" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" aria-label="HTML icon">
+  <g stroke="#ffb400" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M22 20 L10 35 L22 50"/>   <!-- Left angle bracket -->
+    <path d="M48 20 L60 35 L48 50"/>   <!-- Right angle bracket -->
+    <path d="M36 15 L30 55"/>          <!-- Slash -->
+  </g>
+</svg>
