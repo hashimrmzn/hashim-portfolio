@@ -2,11 +2,22 @@ import React from 'react'
 import { Box, Stack, Typography, Button, IconButton } from "@mui/material";
 import logo from "../../../assets/images/logo.png";
 import MenuIcon from "@mui/icons-material/Menu";
+import  { useEffect, useState } from "react";
 function Navbar() {
+    const [scrolled, setScrolled] = useState(false);
+      useEffect(() => {
+        const handleScroll = () => {
+          setScrolled(window.scrollY > 50); // trigger after 50px scroll
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+      }, []);
+    
     return (
         <>
             <Box
-                className="site-header"
+                className={`site-header ${scrolled ? "scrolled" : ""}`}
                 component="header"
                 sx={{
                     width: "100%",

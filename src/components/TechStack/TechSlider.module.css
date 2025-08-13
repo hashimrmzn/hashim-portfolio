@@ -5,8 +5,10 @@
 
 .slider {
   overflow: hidden;
-  white-space: nowrap;
   width: 100%;
+  background-color: #181818;
+  padding: 20px 0;
+  margin: 80px 0 0 0;
 }
 
 .sliderTrack {
@@ -17,7 +19,20 @@
 .slide {
   flex: 0 0 auto;
   min-width: 150px;
-  margin: 0 20px;
-  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+.label {
+  margin-top: 5px;
+  font-size: 0.9rem;
   color: #ffb400;
+  text-align: center;
 }
