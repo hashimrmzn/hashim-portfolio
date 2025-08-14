@@ -7,7 +7,7 @@ function Navbar() {
     const [scrolled, setScrolled] = useState(false);
       useEffect(() => {
         const handleScroll = () => {
-          setScrolled(window.scrollY > 50); // trigger after 50px scroll
+          setScrolled(window.scrollY > 1); 
         };
     
         window.addEventListener("scroll", handleScroll);

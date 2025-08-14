@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Stack, Typography, Button, IconButton } from "@mui/material";
+import { Box, Stack, Typography} from "@mui/material";
 import aboutimage from "../assets/images/about.jpg";
 function About() {
     return (
@@ -119,7 +119,7 @@ function About() {
                                         textAlign: "start",
                                     }}
                                 >
-                                    In WordPress, I build custom solutions ranging from Elementor-powered sites to fully custom themes, integrating Advanced Custom Fields (ACF) for dynamic content management. With extensive experience in PHP, I develop robust custom functionalities, optimize performance, and create tailored features that perfectly match client requirements.
+                                    In WordPress, I build custom solutions ranging from Elementor-powered sites to fully custom themes, integrating Advanced Custom Fields (ACF) for dynamic content management. 
                                 </Typography>
                             </Box>
                         </Stack>

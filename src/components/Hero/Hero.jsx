@@ -2,13 +2,13 @@ import React from 'react'
 import styles from "./Hero-components/Hero.module.css";
 import { Box, Stack, Typography, Button, IconButton } from "@mui/material";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import hImage from "../../assets/images/h.png";
+import uniPic from "../../assets/images/uni-pic.jpg";
 import { styled } from "@mui/material/styles";
 const HoloButton = styled(Button)({
   position: "relative",
   overflow: "hidden",
   borderRadius: "8px",
-  backgroundColor: "#111", // subtle contrast against black body
+  backgroundColor: "#111", 
   color: "#ffb400",
   fontWeight: "bold",
   textTransform: "uppercase",
@@ -79,7 +79,7 @@ function Hero() {
                 <img
                   className="my-pic"
                   data-aos="fade-down-right"
-                  src={hImage}
+                  src={uniPic}
                   alt="Muhammad Hashim"
                   style={{
                     width: "400px",

@@ -8,6 +8,69 @@
   </head>
   <body>
     <div id="root"></div>
+    <div class="cursor" id="cursor"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
+<script>
+(function () {
+  const cursor = document.getElementById('cursor');
+  const finePointer = window.matchMedia('(pointer: fine)').matches;
+  if (!finePointer) {
+    cursor.style.display = 'none';
+    return;
+  }
+
+  let targetX = window.innerWidth / 2;
+  let targetY = window.innerHeight / 2;
+  let currentX = targetX;
+  let currentY = targetY;
+  let rafId = null;
+  let movedOnce = false;
+  const ease = 0.18;
+
+  function animate() {
+    const dx = targetX - currentX;
+    const dy = targetY - currentY;
+    currentX += dx * ease;
+    currentY += dy * ease;
+    cursor.style.transform = `translate(${currentX}px, ${currentY}px)`;
+    rafId = requestAnimationFrame(animate);
+  }
+
+  function onMove(e) {
+    targetX = e.clientX;
+    targetY = e.clientY;
+    if (!movedOnce) {
+      movedOnce = true;
+      cursor.style.opacity = '1';
+    }
+    if (rafId === null) {
+      rafId = requestAnimationFrame(animate);
+    }
+  }
+
+  const hoverSelectors = 'a, button, [role="button"], input, select, textarea, .btn';
+  function setHoverState(active) {
+    if (active) cursor.classList.add('cursor--active');
+    else cursor.classList.remove('cursor--active');
+  }
+
+  document.addEventListener('mousemove', onMove, { passive: true });
+
+  document.addEventListener('mouseover', (e) => {
+    const el = e.target.closest(hoverSelectors);
+    setHoverState(!!el);
+  });
+
+  document.addEventListener('mouseout', (e) => {
+    const el = e.relatedTarget && e.relatedTarget.closest ? e.relatedTarget.closest(hoverSelectors) : null;
+    if (!el) setHoverState(false);
+  });
+
+  document.addEventListener('mouseleave', () => { cursor.style.opacity = '0'; });
+  document.addEventListener('mouseenter', () => { if (movedOnce) cursor.style.opacity = '1'; });
+
+  window.addEventListener('pagehide', () => { cancelAnimationFrame(rafId); });
+})();
+</script>

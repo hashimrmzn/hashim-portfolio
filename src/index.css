@@ -30,4 +30,45 @@ h1 {
   line-height: 1.1;
 }
 
+:root {
+  --brand: #ffb400;
+}
+
+/* Hide default cursor on devices with a fine pointer */
+@media (pointer: fine) {
+  body { cursor: none; }
+}
+
+.cursor {
+  position: fixed;
+  top: 0; left: 0;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle at 30% 30%, rgba(255,180,0,0.85), rgba(255,180,0,0.55));
+  box-shadow:
+    0 0 10px rgba(255,180,0,0.9),
+    0 0 24px rgba(255,180,0,0.55),
+    0 0 48px rgba(255,180,0,0.35);
+  transition:
+    width .18s ease, height .18s ease,
+    box-shadow .18s ease, background .18s ease,
+    opacity .2s ease;
+  opacity: 0; /* fade in after movement starts */
+  mix-blend-mode: screen;
+}
+
+.cursor--active {
+  width: 34px; height: 34px;
+  box-shadow:
+    0 0 12px rgba(255,180,0,0.95),
+    0 0 32px rgba(255,180,0,0.75),
+    0 0 64px rgba(255,180,0,0.55);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor { transition: none; }
+}
 

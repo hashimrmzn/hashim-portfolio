@@ -1,0 +1,9 @@
+.info-list li{
+    width: 47%;
+}
+
+@media (max-width: 767px) {
+   .info-list li{
+    width: 100%;
+} 
+}

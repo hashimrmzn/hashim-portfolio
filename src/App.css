@@ -57,13 +57,18 @@ h2,h3,h4,h5,h6,p{
 .my-pic {
 clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
 }
-
+.sec-spacing{
+  padding: 80px 0;
+}
 /*responsive css*/
 
 @media (max-width: 1024px) {
   .Hero-sec{
 padding-top: 200px !important;
   }
+  .sec-spacing{
+  padding: 60px 0;
+}
 }
 
 @media (max-width: 991px) {
@@ -80,4 +85,8 @@ padding-top: 200px !important;
    .Hero-sec{
 padding-top: 150px !important;
   }
+  .sec-spacing{
+  padding: 40px 0;
 }
+}
+
