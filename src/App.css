@@ -78,6 +78,9 @@ padding-top: 200px !important;
   }
 }
 @media (max-width: 768px) {
+  .my-pic-box{
+    width: 100% !important;
+  }
   .my-pic {
     width: 90% !important;
     height: 300px !important;

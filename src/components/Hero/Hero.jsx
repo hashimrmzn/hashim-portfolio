@@ -69,7 +69,9 @@ function Hero() {
             alignItems="center"
             spacing={2}
           >
-            <Stack sx={{ flex: 1, }}
+            <Stack 
+            className='my-pic-box'
+            sx={{ flex: 1}}
               position={'relative'}
             >
               <Box sx={{
