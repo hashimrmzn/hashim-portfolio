@@ -5,10 +5,73 @@
     <link rel="icon" type="image/svg+xml" href="/hashim-portfolio/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <script type="module" crossorigin src="/hashim-portfolio/assets/index-D87bGn2y.js"></script>
-    <link rel="stylesheet" crossorigin href="/hashim-portfolio/assets/index-CLeKt1Q3.css">
+    <script type="module" crossorigin src="/hashim-portfolio/assets/index-LBBnbZz7.js"></script>
+    <link rel="stylesheet" crossorigin href="/hashim-portfolio/assets/index-C35U6TpN.css">
   </head>
   <body>
     <div id="root"></div>
+    <div class="cursor" id="cursor"></div>
   </body>
 </html>
+<script>
+(function () {
+  const cursor = document.getElementById('cursor');
+  const finePointer = window.matchMedia('(pointer: fine)').matches;
+  if (!finePointer) {
+    cursor.style.display = 'none';
+    return;
+  }
+
+  let targetX = window.innerWidth / 2;
+  let targetY = window.innerHeight / 2;
+  let currentX = targetX;
+  let currentY = targetY;
+  let rafId = null;
+  let movedOnce = false;
+  const ease = 0.18;
+
+  function animate() {
+    const dx = targetX - currentX;
+    const dy = targetY - currentY;
+    currentX += dx * ease;
+    currentY += dy * ease;
+    cursor.style.transform = `translate(${currentX}px, ${currentY}px)`;
+    rafId = requestAnimationFrame(animate);
+  }
+
+  function onMove(e) {
+    targetX = e.clientX;
+    targetY = e.clientY;
+    if (!movedOnce) {
+      movedOnce = true;
+      cursor.style.opacity = '1';
+    }
+    if (rafId === null) {
+      rafId = requestAnimationFrame(animate);
+    }
+  }
+
+  const hoverSelectors = 'a, button, [role="button"], input, select, textarea, .btn';
+  function setHoverState(active) {
+    if (active) cursor.classList.add('cursor--active');
+    else cursor.classList.remove('cursor--active');
+  }
+
+  document.addEventListener('mousemove', onMove, { passive: true });
+
+  document.addEventListener('mouseover', (e) => {
+    const el = e.target.closest(hoverSelectors);
+    setHoverState(!!el);
+  });
+
+  document.addEventListener('mouseout', (e) => {
+    const el = e.relatedTarget && e.relatedTarget.closest ? e.relatedTarget.closest(hoverSelectors) : null;
+    if (!el) setHoverState(false);
+  });
+
+  document.addEventListener('mouseleave', () => { cursor.style.opacity = '0'; });
+  document.addEventListener('mouseenter', () => { if (movedOnce) cursor.style.opacity = '1'; });
+
+  window.addEventListener('pagehide', () => { cancelAnimationFrame(rafId); });
+})();
+</script>
