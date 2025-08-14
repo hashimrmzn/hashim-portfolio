@@ -42,21 +42,24 @@ const HoloButton = styled(Button)({
 
 function DownloadCv() {
   return (
-   <>
-<Box sx={{
-    mt:"40px",
-    alignContent:"start"
-}}>
-     <HoloButton
-      variant="contained"
-      startIcon={<DownloadIcon />}
-      href="/cv.pdf" // Change this to your CV file path
-      download
-    >
-      Download CV
-    </HoloButton>
-    </Box>
-   </>
+    <>
+      <Box
+        sx={{
+          mt: "40px",
+          alignContent: "start",
+          display: "flex"
+        }}
+      >
+        <HoloButton
+          variant="contained"
+          startIcon={<DownloadIcon />}
+          href="/cv.pdf" // Change this to your CV file path
+          download
+        >
+          Download CV
+        </HoloButton>
+      </Box>
+    </>
   )
 }
 

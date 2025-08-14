@@ -34,7 +34,7 @@ function About() {
                             }}>
                                 <img
                                     className='about-img'
-                                    data-aos="fade-right"
+                                    
                                     src={aboutimage}
                                     alt="Who I am"
                                     style={{

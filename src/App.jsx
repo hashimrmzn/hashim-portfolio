@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import About from './components/About';
 import TechSlider from './components/TechStack/TechSlider';
 import Myinfor from './components/PersonalInfo/Myinfor';
+import MyProjects from './components/MyProjects/MyProjects';
 
 function App() {
 useEffect(() => {
@@ -22,6 +23,7 @@ useEffect(() => {
      <TechSlider />
      <About />
     <Myinfor />
+    <MyProjects />
     </>
   )
 }
