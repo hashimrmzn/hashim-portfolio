@@ -39,12 +39,20 @@ function ProjectsTab() {
         </Box>
 
         {/* Frontend Tab */}
-        <TabPanel value="1">
+        <TabPanel value="1"
+        sx={{ p: 0,
+          marginTop:"40px",
+         }}
+        >
           <FrontendProjects />
         </TabPanel>
 
         {/* WordPress Tab */}
-        <TabPanel value="2">
+        <TabPanel value="2"
+        sx={{ p: 0,
+          marginTop:"40px",
+         }}
+        >
           <Stack spacing={1}>
             <Typography variant="h6" sx={{ fontWeight: 600, color: '#ffb400' }}>
               WordPress Skills

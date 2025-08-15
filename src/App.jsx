@@ -21,9 +21,10 @@ useEffect(() => {
     <Header />
      <Home />
      <TechSlider />
+     <MyProjects />
      <About />
     <Myinfor />
-    <MyProjects />
+    
     </>
   )
 }

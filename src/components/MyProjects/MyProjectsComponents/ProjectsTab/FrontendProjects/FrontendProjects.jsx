@@ -2,31 +2,73 @@ import React from 'react'
 import { Box, Stack, Typography,Button } from "@mui/material";
 import images from '../../../../../utils/images';
 const projects = [
+     {
+        title: "Todo-List",
+        image: "todolistpng.png",
+          url: "https://hashimrmzn.github.io/TodoList/", 
+        description: "", 
+    },
+    {
+        title: "Enertia",
+        image: "enertia.png",
+          url: "https://hashimrmzn.github.io/Enertia/", 
+        description: "", 
+    },
     {
         title: "Ittefaq Electrotech",
-        image: "/assets/images/ittefaq.jpg", // change to your image path
+        image: "itet.png",
+          url: "https://itelectrotech.com/", 
+        description: "", 
     },
     {
-        title: "Another Project",
-        image: "/assets/images/project2.jpg",
+        title: "Ittefaq Construction",
+        image: "icca.png",
+        url: "https://itelectrotech.com/", 
+        description: "",
     },
     {
-        title: "Third Project",
-        image: "/assets/images/project3.jpg",
+        title: "Girls Life",
+        image: "girlslife.png",
+        url: "https://girlslife.com/", 
+        description: "",
     },
+    
+    {
+        title: "Augamis",
+        image: "augam.png",
+        url: "https://augamishealth.com/", 
+        description: "",
+    },
+     {
+        title: "xtreaminternet",
+        image: "xtreaminternet.png",
+        url: "https://xtreaminternet.com/", 
+        description: "",
+    },
+    ,
+     {
+        title: "Pinecrest",
+        image: "pinecrest.png",
+        url: "https://www.pinecrestconsulting.com/", 
+        description: "",
+    },
+    
 ];
 function FrontendProjects() {
     return (
         <>
-            <Box>
+        <Box>
                 <Stack spacing={1}>
                     <Stack
+                    
                         className="all-projects-wrap"
                         direction="row"
                         flexWrap="wrap"
                         gap={3}
-                        justifyContent="center"
-                        sx={{ mt: 4 }}
+                        justifyContent="start"
+                        sx={{ mt: 4,
+                            
+                         }}
                     >
                         {projects.map((project, i) => (
                             <Box

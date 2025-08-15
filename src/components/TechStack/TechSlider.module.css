@@ -8,7 +8,7 @@
   width: 100%;
   background-color: #181818;
   padding: 20px 0;
-  margin: 80px 0 0 0;
+  margin: 80px 0;
 }
 
 .sliderTrack {
@@ -35,4 +35,11 @@
   font-size: 0.9rem;
   color: #ffb400;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+.slider {
+  margin: 40px 0;
+}
+
 }
