@@ -5,15 +5,15 @@ import images from '../../../../../utils/images';
 import ProjectPopup from '../../ProjectPopup';
 const projects = [
     {
-        title: "Todo-List",
-        image: "todolistpng.png",
-        url: "https://hashimrmzn.github.io/TodoList/",
+        title: "Mason Law",
+        image: "mlapg.png",
+        url: "https://mlapg.com/",
         description: "",
     },
     {
-        title: "Enertia",
-        image: "enertia.png",
-        url: "https://hashimrmzn.github.io/Enertia/",
+        title: "Dr-Brooks",
+        image: "brooks.png",
+        url: "https://cmswebdeveloper.com/dr-brooks/",
         description: "",
     },
     {
