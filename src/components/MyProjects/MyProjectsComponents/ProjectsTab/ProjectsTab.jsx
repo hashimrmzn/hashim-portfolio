@@ -7,10 +7,10 @@ import TabContext from '@mui/lab/TabContext';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 import FrontendProjects from './FrontendProjects/FrontendProjects';
+import WordpressProjects from './WordpressProjects/WordpressProjects';
 
 function ProjectsTab() {
   const [value, setValue] = React.useState('1');
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -53,19 +53,16 @@ function ProjectsTab() {
           marginTop:"40px",
          }}
         >
-          <Stack spacing={1}>
-            <Typography variant="h6" sx={{ fontWeight: 600, color: '#ffb400' }}>
-              WordPress Skills
-            </Typography>
-            <Typography>- Custom Theme Development</Typography>
-            <Typography>- Custom Plugin Development</Typography>
-            <Typography>- Elementor Page Building</Typography>
-            <Typography>- WooCommerce Integration</Typography>
-            <Typography>- Site Performance & SEO Optimization</Typography>
-          </Stack>
+          <WordpressProjects />
         </TabPanel>
       </TabContext>
+
+
+     
     </Box>
+
+    
+     
   );
 }
 

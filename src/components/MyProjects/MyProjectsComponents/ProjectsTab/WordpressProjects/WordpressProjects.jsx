@@ -56,8 +56,9 @@ const projects = [
     },
 
 ];
-function FrontendProjects() {
-    const [selectedProject, setSelectedProject] = useState(null);
+
+function WordpressProjects() {
+  const [selectedProject, setSelectedProject] = useState(null);
     return (
         <>
             <Box>
@@ -157,4 +158,4 @@ function FrontendProjects() {
     )
 }
 
-export default FrontendProjects
+export default WordpressProjects
