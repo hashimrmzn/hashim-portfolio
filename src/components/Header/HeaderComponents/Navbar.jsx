@@ -1,19 +1,21 @@
 import React from 'react'
-import { Box, Stack, Typography, Button, IconButton } from "@mui/material";
+import { Box, Stack, Typography, Button, IconButton, Menu } from "@mui/material";
 import logo from "../../../assets/images/logo.png";
 import MenuIcon from "@mui/icons-material/Menu";
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import MenuBox from './MenuBox';
 function Navbar() {
     const [scrolled, setScrolled] = useState(false);
-      useEffect(() => {
+    const [menuOpen, setMenuOpen] = useState(false);
+    useEffect(() => {
         const handleScroll = () => {
-          setScrolled(window.scrollY > 1); 
+            setScrolled(window.scrollY > 1);
         };
-    
+
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-      }, []);
-    
+    }, []);
+
     return (
         <>
             <Box
@@ -34,7 +36,7 @@ function Navbar() {
                         direction="row"
                         justifyContent="space-between"
                         alignItems="center"
-                        
+
                     >
                         <Box component="img" src={logo} alt="Logo" sx={{ height: 100 }} />
 
@@ -43,6 +45,7 @@ function Navbar() {
                                 sx={{ color: "#ffb400" }}
                                 size="large"
                                 aria-label="menu"
+                                onClick={() => setMenuOpen(true)}
                             >
                                 <MenuIcon fontSize="inherit" />
                             </IconButton>
@@ -50,6 +53,9 @@ function Navbar() {
                     </Stack>
                 </div>
             </Box>
+            <MenuBox open={menuOpen} onClose={() => setMenuOpen(false)} />
+        
+
         </>
     )
 }

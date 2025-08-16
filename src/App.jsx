@@ -13,23 +13,45 @@ import TechSkills from './components/TechSkills/TechSkills';
 import Contact from './components/Contact/Contact';
 
 function App() {
-useEffect(() => {
-    AOS.init({
-      once: true,
-    });
+  useEffect(() => {
+    AOS.init({ once: true });
   }, []);
 
   return (
     <>
-    <Header />
-     <Home />
-     <TechSlider />
-     <MyProjects />
-     <About />
-    <Myinfor />
-    <MyExpirience />
-    <TechSkills />
-    <Contact />
+      <Header />
+
+      <section id="home">
+        <Home />
+      </section>
+
+      <section id="techslider">
+        <TechSlider />
+      </section>
+
+      <section id="myprojects">
+        <MyProjects />
+      </section>
+
+      <section id="about">
+        <About />
+      </section>
+
+      <section id="myinfor">
+        <Myinfor />
+      </section>
+
+      <section id="myexpirience">
+        <MyExpirience />
+      </section>
+
+      <section id="techskills">
+        <TechSkills />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
     </>
   )
 }

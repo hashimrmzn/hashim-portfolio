@@ -8,31 +8,31 @@ const projects = [
         title: "Mason Law",
         image: "mlapg.png",
         url: "https://mlapg.com/",
-        description: "",
+        description: "Mason Law is a professional law firm website built with WordPress using Elementor and Elementor Pro. I customized the design with tailored CSS to achieve a polished and modern look, ensuring a responsive layout and smooth user experience. The project highlights my expertise in creating clean, functional, and client-focused WordPress solutions.",
     },
     {
         title: "Dr-Brooks",
         image: "brooks.png",
         url: "https://cmswebdeveloper.com/dr-brooks/",
-        description: "",
+        description: "Dr-Brooks is a portfolio website designed for a motivational speaker, built with WordPress using Elementor and Elementor Pro. I crafted a modern and engaging layout with custom CSS enhancements to highlight the speaker’s brand, services, and achievements. The site is fully responsive, visually appealing, and optimized for an impactful user experience.",
     },
     {
         title: "Ittefaq Electrotech",
         image: "itet.png",
         url: "https://itelectrotech.com/",
-        description: "",
+        description: "Ittefaq Electrotech is a custom WordPress theme that I developed from scratch using HTML, CSS, JavaScript, jQuery, and PHP. The dynamic content was managed with ACF Pro, while Contact Form 7 handled form submissions. To ensure performance, security, and optimization, I integrated essential plugins such as Wordfence Security, an SEO plugin, and a caching plugin. The result is a fully responsive, fast, and secure website tailored to the client’s business needs.",
     },
     {
         title: "Ittefaq Construction",
         image: "icca.png",
         url: "https://itelectrotech.com/",
-        description: "",
+        description: "Ittefaq Construction is a custom WordPress theme that I built using HTML, CSS, JavaScript, jQuery, and PHP. I implemented ACF Pro for dynamic content management and Contact Form 7 for seamless form handling. To enhance site performance, SEO, and security, I integrated key plugins including Wordfence Security, an SEO plugin, and a caching plugin. The project delivers a responsive, optimized, and secure online presence tailored to the client’s construction business.",
     },
     {
         title: "Girls Life",
         image: "girlslife.png",
         url: "https://girlslife.com/",
-        description: "",
+        description: "Girls Life is a custom WordPress theme crafted using HTML, CSS, JavaScript, jQuery, and PHP. I utilized ACF Pro for flexible content management and Contact Form 7 for interactive forms. Wordfence Security, SEO, and caching plugins were integrated to ensure performance, search optimization, and protection. The project delivers a dynamic and responsive magazine-style layout tailored to the brand’s audience.",
     },
 
     {
@@ -45,14 +45,14 @@ const projects = [
         title: "xtreaminternet",
         image: "xtreaminternet.png",
         url: "https://xtreaminternet.com/",
-        description: "",
+        description: "Xtream Internet is a fully customized WordPress theme built with HTML, CSS, JavaScript, jQuery, and PHP. I implemented ACF Pro to manage dynamic site content and Contact Form 7 for user inquiries. To secure and optimize the website, Wordfence Security, SEO, and caching plugins were added. The result is a professional, fast, and responsive platform for the internet service provider.",
     },
 
     {
         title: "Pinecrest",
         image: "pinecrest.png",
         url: "https://www.pinecrestconsulting.com/",
-        description: "",
+        description: "Pinecrest Consulting features a custom WordPress theme developed with HTML, CSS, JavaScript, jQuery, and PHP. I incorporated ACF Pro for flexible content fields and Contact Form 7 for smooth client communication. Wordfence Security, SEO, and caching plugins were applied to enhance protection, visibility, and performance. The site provides a polished and reliable online presence for the consulting firm.",
     },
 
 ];
