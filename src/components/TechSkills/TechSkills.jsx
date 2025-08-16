@@ -30,7 +30,7 @@ export default function TechSkills() {
                 sx={{
                     color: "#fff",
                     py: 6,
-                    px: { xs: 2, md: 6 },
+                   
                 }}
             >
                 <Typography
@@ -42,55 +42,59 @@ export default function TechSkills() {
                         mb: 4,
                         textTransform: "uppercase",
                         letterSpacing: "2px",
-                        fontSize: { xs: "20px", sm: "32px", md: "40px" }
+                        fontSize: { xs: "20px", sm: "32px", md: "40px" },
                     }}
                 >
                     My Tech Skills
                 </Typography>
 
-                <Grid
-                    container
-                    spacing={3}
-                    justifyContent={{ xs: "flex-start", sm: "center" }}
+                <Box
+                    sx={{
+                        display: "grid",
+                        gap: 2,
+                        gridTemplateColumns: {
+                            xs: "repeat(2, 1fr)",  
+                            sm: "repeat(4, 1fr)",  
+                            md: "repeat(9, 1fr)", 
+                        },
+                    }}
                 >
                     {skills.map((skill, index) => (
-                        <Grid item xs={6} sm={4} md={3} key={index}>
-                            <Card
-
-                                sx={{
-                                    background: "linear-gradient(145deg, #2a2a2a, #383838)",
-                                    border: "1px solid #ffb400",
-                                    borderRadius: "12px",
-                                    textAlign: "center",
-                                    cursor: "pointer",
-                                    transition: "all 0.3s ease",
-                                    "&:hover": {
-                                        transform: "scale(1.08)",
-                                        boxShadow: "0px 0px 20px #ffb40060",
-                                        borderColor: "#fff",
-                                    },
-                                }}
+                        <Card
+                            key={index}
+                            sx={{
+                                background: "linear-gradient(145deg, #2a2a2a, #383838)",
+                                border: "1px solid #ffb400",
+                                borderRadius: "12px",
+                                textAlign: "center",
+                                cursor: "pointer",
+                                transition: "all 0.3s ease",
+                                "&:hover": {
+                                    transform: "scale(1.08)",
+                                    boxShadow: "0px 0px 20px #ffb40060",
+                                    borderColor: "#fff",
+                                },
+                            }}
+                        >
+                            <CardContent
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
                             >
-                                <CardContent
-                                    data-aos="fade-up"
-                                    data-aos-duration="1000"
+                                <Box sx={{ mb: 1, display: "flex", justifyContent: "center" }}>
+                                    {skill.icon}
+                                </Box>
+                                <Typography
+                                    variant="subtitle1"
+                                    sx={{ color: "#fff", fontWeight: "bold" }}
                                 >
-
-                                    <Box sx={{ mb: 1, display: "flex", justifyContent: "center" }}>
-                                        {skill.icon}
-                                    </Box>
-                                    <Typography
-                                        variant="subtitle1"
-                                        sx={{ color: "#fff", fontWeight: "bold" }}
-                                    >
-                                        {skill.name}
-                                    </Typography>
-                                </CardContent>
-                            </Card>
-                        </Grid>
+                                    {skill.name}
+                                </Typography>
+                            </CardContent>
+                        </Card>
                     ))}
-                </Grid>
+                </Box>
             </Box>
         </div>
+
     );
 }

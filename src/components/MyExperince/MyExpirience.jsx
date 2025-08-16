@@ -18,9 +18,9 @@ function MyExpirience() {
                 <Stack
                     sx={{
                         mt: {
-                            md: "60px",
-                            sm: "60px",
-                            xs: "40px"
+                            md: "10px",
+                            sm: "10px",
+                            xs: "10px"
                         }
                     }}
                 >
