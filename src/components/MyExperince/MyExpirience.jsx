@@ -40,6 +40,8 @@ function MyExpirience() {
                             },
                         ].map((work, index) => (
                             <Box
+                                data-aos="fade-up"
+                                data-aos-duration="1500"
                                 key={index}
                                 sx={{
                                     width: "100%",

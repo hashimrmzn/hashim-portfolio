@@ -51,6 +51,7 @@ export default function TechSkills() {
         {skills.map((skill, index) => (
           <Grid item xs={6} sm={4} md={3} key={index}>
             <Card
+           
               sx={{
                 background: "linear-gradient(145deg, #2a2a2a, #383838)",
                 border: "1px solid #ffb400",
@@ -65,7 +66,11 @@ export default function TechSkills() {
                 },
               }}
             >
-              <CardContent>
+              <CardContent
+               data-aos="fade-up"
+     data-aos-duration="1000"
+              >
+                
                 <Box sx={{ mb: 1, display: "flex", justifyContent: "center" }}>
                   {skill.icon}
                 </Box>
