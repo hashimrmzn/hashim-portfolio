@@ -10,6 +10,7 @@ import Myinfor from './components/PersonalInfo/Myinfor';
 import MyProjects from './components/MyProjects/MyProjects';
 import MyExpirience from './components/MyExperince/MyExpirience';
 import TechSkills from './components/TechSkills/TechSkills';
+import Contact from './components/Contact/Contact';
 
 function App() {
 useEffect(() => {
@@ -28,6 +29,7 @@ useEffect(() => {
     <Myinfor />
     <MyExpirience />
     <TechSkills />
+    <Contact />
     </>
   )
 }
