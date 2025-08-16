@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from "@mui/material";
 import { styled } from "@mui/system";
 import { Box } from "@mui/material";
+import cvFile from "../../../assets/cv.pdf";
 import DownloadIcon from "@mui/icons-material/Download";
 const HoloButton = styled(Button)({
   position: "relative",
@@ -46,14 +47,14 @@ function DownloadCv() {
       <Box
         sx={{
           mt: "40px",
-          
+
         }}
       >
         <HoloButton
           variant="contained"
           startIcon={<DownloadIcon />}
-          href="/cv.pdf" // Change this to your CV file path
-          download
+          href={cvFile}
+          download="Hashim-Ramzan-CV.pdf"
         >
           Download CV
         </HoloButton>
