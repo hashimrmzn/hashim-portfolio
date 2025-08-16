@@ -96,5 +96,10 @@ padding-top: 150px !important;
   .sec-spacing{
   padding: 40px 0;
 }
+
+.descrption-height{
+  height: 150px;
+  overflow-y: scroll;
+}
 }
 

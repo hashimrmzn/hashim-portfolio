@@ -115,6 +115,7 @@ export default function ProjectPopup({ open, onClose, project }) {
 
                 {/* Description */}
                 <Typography
+                className="descrption-height"
                     variant="body1"
                     sx={{ marginBottom: "20px", lineHeight: 1.6 }}
                 >
