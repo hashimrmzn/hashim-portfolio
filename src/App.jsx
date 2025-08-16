@@ -8,6 +8,8 @@ import About from './components/About';
 import TechSlider from './components/TechStack/TechSlider';
 import Myinfor from './components/PersonalInfo/Myinfor';
 import MyProjects from './components/MyProjects/MyProjects';
+import MyExpirience from './components/MyExperince/MyExpirience';
+import TechSkills from './components/TechSkills/TechSkills';
 
 function App() {
 useEffect(() => {
@@ -24,7 +26,8 @@ useEffect(() => {
      <MyProjects />
      <About />
     <Myinfor />
-    
+    <MyExpirience />
+    <TechSkills />
     </>
   )
 }

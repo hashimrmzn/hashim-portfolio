@@ -46,8 +46,7 @@ function DownloadCv() {
       <Box
         sx={{
           mt: "40px",
-          alignContent: "start",
-          display: "flex"
+          
         }}
       >
         <HoloButton
