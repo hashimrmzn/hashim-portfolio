@@ -99,11 +99,13 @@ function Hero() {
             </Stack>
 
             <Stack sx={{ flex: 1, p: 3 }}>
-              <Box>
+              <Box
+              data-aos="fade-up"
+                  data-aos-duration="1000"
+              >
 
                 <Typography
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
+                  
                   variant="h1"
                   sx={{
                     fontSize: {
@@ -121,8 +123,7 @@ function Hero() {
                   I am Muhammad Hashim.
                 </Typography>
                 <Typography
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
+                 
                   variant="h3"
                   sx={{
                     fontSize: {
@@ -151,8 +152,7 @@ function Hero() {
                 </Typography>
 
                 <Typography
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
+                  
                   variant="body1"
                   component="p"
                   sx={{
@@ -164,8 +164,7 @@ function Hero() {
                   I’m a Frontend & WordPress Developer creating fast, responsive, and visually stunning websites.
                 </Typography>
                 <div
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
+               
                   style={{ margin: "20px  0 0 0", display: "flex", justifyContent: "start", alignItems: "center" }}>
                   <HoloButton variant="contained">More About Me</HoloButton>
                 </div>
