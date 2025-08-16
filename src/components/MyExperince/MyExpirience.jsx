@@ -6,15 +6,19 @@ function MyExpirience() {
         <>
 
             <div className='container'>
-                <Typography variant='h3'
-                    sx={{ color: "#ffb400" }}
+                <Typography
+                    variant="h3"
+                    sx={{
+                        color: "#ffb400",
+                        fontSize: { xs: "20px", sm: "32px", md: "40px" },
+                    }}
                 >
                     Where I’ve Worked
                 </Typography>
                 <Stack
                     sx={{
                         mt: {
-                            md: "80px",
+                            md: "60px",
                             sm: "60px",
                             xs: "40px"
                         }
