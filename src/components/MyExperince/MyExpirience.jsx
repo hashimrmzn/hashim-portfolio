@@ -39,7 +39,7 @@ function MyExpirience() {
                                 institute: "July 2025 – Present",
                             },
                             {
-                                title: "React Intern — Conect Solutions",
+                                title: "React Intern — Connect Solutions",
                                 institute: "July 2025 – Present",
                             },
                         ].map((work, index) => (

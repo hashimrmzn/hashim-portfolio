@@ -4,6 +4,12 @@ import { Box, Stack, Typography, Button, IconButton } from "@mui/material";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import uniPic from "../../assets/images/uni-pic.jpg";
 import { styled } from "@mui/material/styles";
+  const handleScroll = (id) => {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    };
 const HoloButton = styled(Button)({
   position: "relative",
   overflow: "hidden",
@@ -166,7 +172,9 @@ function Hero() {
                 <div
                
                   style={{ margin: "20px  0 0 0", display: "flex", justifyContent: "start", alignItems: "center" }}>
-                  <HoloButton variant="contained">More About Me</HoloButton>
+                  <HoloButton 
+                  onClick={() => handleScroll("about")}
+                  variant="contained">More About Me</HoloButton>
                 </div>
               </Box>
             </Stack>
