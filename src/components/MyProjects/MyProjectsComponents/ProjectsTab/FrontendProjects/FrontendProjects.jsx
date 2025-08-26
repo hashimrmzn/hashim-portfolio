@@ -16,6 +16,12 @@ const projects = [
         url: "https://hashimrmzn.github.io/Enertia/",
         description: "Enertia is a sleek and responsive web application developed with React, CSS, and Material-UI. It highlights a modern design approach with a focus on usability and clean layouts. This project showcases my ability to build interactive components, manage state effectively, and create visually appealing interfaces optimized for different devices.",
     },
+     {
+        title: "Male Fashions",
+        image: "male-fashion.png",
+        url: "https://male-fashions-kzzusxhnr-muhammad-hashims-projects-1adc8997.vercel.app/",
+        description: "A modern e-commerce web application built with Next.js for showcasing and selling male fashion products.",
+    },
     {
         title: "Ittefaq Electrotech",
         image: "itet.png",
