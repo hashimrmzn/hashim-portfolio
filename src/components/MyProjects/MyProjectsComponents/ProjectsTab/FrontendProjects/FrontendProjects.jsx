@@ -22,6 +22,12 @@ const projects = [
         url: "https://male-fashions-kzzusxhnr-muhammad-hashims-projects-1adc8997.vercel.app/",
         description: "A modern e-commerce web application built with Next.js for showcasing and selling male fashion products.",
     },
+     {
+        title: "React User Crud Form",
+        image: "form.png",
+        url: "https://hashimrmzn.github.io/react-user-crud-form/",
+        description: "A simple React application demonstrating CRUD operations with dynamic user forms using Material-UI. Add, edit, and manage users with inline editing support.",
+    },
     {
         title: "Ittefaq Electrotech",
         image: "itet.png",
