@@ -22,6 +22,12 @@ const projects = [
         url: "https://male-fashions-kzzusxhnr-muhammad-hashims-projects-1adc8997.vercel.app/",
         description: "A modern e-commerce web application built with Next.js for showcasing and selling male fashion products.",
     },
+    {
+        title: "API Filtered DataGrid",
+        image: "datagrid.png",
+        url: "https://hashimrmzn.github.io/react-mui-datagrid-filters/",
+        description: "A React app using Material-UI DataGrid to display products from DummyJSON API with category filtering, search, and sorting. Built with custom hooks and reusable components.",
+    },
      {
         title: "React User Crud Form",
         image: "form.png",
