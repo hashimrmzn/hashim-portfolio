@@ -26,7 +26,7 @@ const projects = [
         title: "API Filtered DataGrid",
         image: "datagrid.png",
         url: "https://hashimrmzn.github.io/react-mui-datagrid-filters/",
-        description: "A React app using Material-UI DataGrid to display products from DummyJSON API with category filtering, search, and sorting. Built with custom hooks and reusable components.",
+        description: "This project is a product management dashboard built with React, Redux Toolkit, and Material UI. It integrates APIs to fetch, search, and filter products, while handling loading and error states. The dashboard uses Material UI’s DataGrid with custom cell rendering for prices, discounts, and stock status, creating a clean and interactive user experience.",
     },
      {
         title: "React User Crud Form",
