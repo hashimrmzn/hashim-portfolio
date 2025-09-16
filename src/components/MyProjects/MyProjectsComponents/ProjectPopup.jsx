@@ -117,7 +117,7 @@ export default function ProjectPopup({ open, onClose, project }) {
                 <Typography
                 className="descrption-height"
                     variant="body1"
-                    sx={{ marginBottom: "20px", lineHeight: 1.6 }}
+                    sx={{ marginBottom: "20px", lineHeight: 1.6,maxHeight:"130px",  overflowY: "auto", }}
                 >
                     {project?.description || "No description provided."}
                 </Typography>
