@@ -16,7 +16,7 @@ const projects = [
         url: "https://hashimrmzn.github.io/Enertia/",
         description: "Enertia is a sleek and responsive web application developed with React, CSS, and Material-UI. It highlights a modern design approach with a focus on usability and clean layouts. This project showcases my ability to build interactive components, manage state effectively, and create visually appealing interfaces optimized for different devices.",
     },
-     {
+    {
         title: "Male Fashions",
         image: "male-fashion.png",
         url: "https://male-fashions-kzzusxhnr-muhammad-hashims-projects-1adc8997.vercel.app/",
@@ -26,9 +26,9 @@ const projects = [
         title: "API Filtered DataGrid",
         image: "datagrid.png",
         url: "https://hashimrmzn.github.io/react-mui-datagrid-filters/",
-        description: "This project is a product management dashboard built with React, Redux Toolkit, and Material UI. It integrates APIs to fetch, search, and filter products, while handling loading and error states. The dashboard uses Material UI’s DataGrid with custom cell rendering for prices, discounts, and stock status, creating a clean and interactive user experience.",
+        description: "This project is a Product Management Dashboard built with React, Redux Toolkit, and Material UI, designed to provide a modern and intuitive interface for managing products and users. It integrates with APIs to fetch, search, and filter product data while handling loading and error states efficiently. The dashboard leverages Material UI’s DataGrid with custom cell rendering to display prices, discounts, and stock status in a clean, interactive way. In addition to product management, the project implements a complete authentication and session management system using JWT tokens. Users can log in securely, and the app automatically refreshes access tokens when they expire, ensuring a smooth experience without requiring frequent logins. If both tokens expire, the system gracefully alerts the user and redirects them to the login page.The dashboard also features user profile management, allowing users to view their personal details such as name, email, and avatar in a responsive Material UI layout. With protected routes and conditional rendering, the app ensures that only authenticated users can access sensitive parts of the dashboard.By combining state management, secure authentication, responsive design, and API integration, this project demonstrates a strong foundation in building real-world, production-ready web applications.",
     },
-     {
+    {
         title: "React User Crud Form",
         image: "form.png",
         url: "https://hashimrmzn.github.io/react-user-crud-form/",
