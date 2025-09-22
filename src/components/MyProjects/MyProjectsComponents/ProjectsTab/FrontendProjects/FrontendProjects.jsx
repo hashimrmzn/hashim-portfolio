@@ -72,6 +72,12 @@ const projects = [
         url: "https://www.pinecrestconsulting.com/",
         description: "Pinecrest Consulting is a custom WordPress theme project where I built the frontend using HTML, CSS, JavaScript, jQuery, and AOS animations. The website was crafted to deliver a modern, responsive, and engaging user experience while maintaining a professional and corporate look that aligns with the client’s brand identity.",
     },
+    {
+        title: "Grocery List Web App",
+        image: "grocery.png",
+        url: "https://hashimrmzn.github.io/grossary-app/",
+        description:"A simple and interactive Grocery List application built with HTML, CSS, and JavaScript. The app allows users to add, update, and remove grocery items, adjust item quantities, and view the total items in the list. Data persistence is handled using Local Storage, so the list remains intact even after refreshing or closing the browser."
+    }
 
 ];
 function FrontendProjects() {
