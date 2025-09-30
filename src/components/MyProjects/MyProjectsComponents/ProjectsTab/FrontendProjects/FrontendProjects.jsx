@@ -4,6 +4,13 @@ import { Box, Stack, Typography, Button } from "@mui/material";
 import images from '../../../../../utils/images';
 import ProjectPopup from '../../ProjectPopup';
 const projects = [
+    
+     {
+        title: "Daraz Clone – E-Commerce Homepage",
+        image: "daraz-pk.png",
+        url: "https://hashimrmzn.github.io/daraz-pk/",
+        description: "I built a responsive e-commerce homepage inspired by Daraz using React, Material UI, and React Router. Products and categories are fetched from the DummyJSON API and managed globally with the Context API. The project features a dynamic header with conditional rendering for mobile/desktop, responsive product carousels powered by React Slick, and a clean, modern UI. This project highlights my skills in API integration, state management, and responsive design.",
+    },
     {
         title: "Todo-List",
         image: "todolistpng.png",
