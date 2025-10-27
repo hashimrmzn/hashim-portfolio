@@ -18,6 +18,18 @@ const projects = [
         description: "A modern and responsive Todo List application built with React, CSS, and Material-UI. It allows users to add, update, and delete tasks with a clean and intuitive interface. Designed with smooth UI interactions and responsive layouts, this project demonstrates my skills in React component architecture, state management, and UI/UX design.",
     },
     {
+        title: "Paradise Nursery",
+        image: "nursery.png",
+        url: "https://hashimrmzn.github.io/Paradise-Nursery/#/",
+        description: "A modern plant and nursery e-commerce web app built with React, Vite, and Material UI. Browse beautiful plants, manage your cart, and explore nature-inspired products.",
+    },
+     {
+        title: "TravelBloom",
+        image: "travelboom.png",
+        url: "https://hashimrmzn.github.io/TravelBloom/",
+        description: "TravelBloom is a dynamic travel recommendation website that helps users discover ideal destinations based on their interests. It offers personalized suggestions, detailed information, local time, and stunning visuals, ensuring a seamless, engaging, and inspiring trip-planning experience.",
+    },
+    {
         title: "Enertia",
         image: "enertia.png",
         url: "https://hashimrmzn.github.io/Enertia/",
