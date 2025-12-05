@@ -37,6 +37,10 @@ function EducInfo() {
               title: "BS Computer Science — University of Central Punjab",
               institute: "2019 - 2023",
             },
+             {
+              title: "IBM Full-Stack JavaScript Developer",
+              institute: "Oct - Dec 2025",
+            },
             {
               title: "Bootcamps — WordPress & Frontend Development",
               institute: "June - July 2023",

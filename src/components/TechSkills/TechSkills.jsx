@@ -1,15 +1,9 @@
 // TechSkills.jsx
 import React from "react";
 import { Box, Grid, Typography, Card, CardContent } from "@mui/material";
-import {
-    FaHtml5,
-    FaCss3Alt,
-    FaJs,
-    FaReact,
-    FaWordpress,
-    FaPhp,
-} from "react-icons/fa";
-import { SiJquery, SiMui, SiBootstrap } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaWordpress, FaPhp, FaNode } from "react-icons/fa";
+import { SiJquery, SiBootstrap, SiMui, SiNextdotjs, SiExpress, SiMongodb } from "react-icons/si";
+
 
 const skills = [
     { name: "HTML5", icon: <FaHtml5 size={40} color="#ffb400" /> },
@@ -19,9 +13,14 @@ const skills = [
     { name: "Bootstrap", icon: <SiBootstrap size={40} color="#ffb400" /> },
     { name: "Material UI", icon: <SiMui size={40} color="#ffb400" /> },
     { name: "React", icon: <FaReact size={40} color="#ffb400" /> },
+    { name: "Next.js", icon: <SiNextdotjs size={40} color="#ffb400" /> },
+    { name: "Node.js", icon: <FaNode size={40} color="#ffb400" /> },
+    { name: "Express.js", icon: <SiExpress size={40} color="#ffb400" /> },
+    { name: "MongoDB", icon: <SiMongodb size={40} color="#ffb400" /> },
     { name: "WordPress", icon: <FaWordpress size={40} color="#ffb400" /> },
     { name: "PHP", icon: <FaPhp size={40} color="#ffb400" /> },
 ];
+
 
 export default function TechSkills() {
     return (

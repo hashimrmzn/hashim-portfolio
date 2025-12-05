@@ -154,7 +154,7 @@ function Hero() {
                     }
                   }}
                 >
-                  Frontend &amp; WordPress Developer
+                  Frontend & WordPress Developer | React & JavaScript Specialist
                 </Typography>
 
                 <Typography
@@ -167,7 +167,7 @@ function Hero() {
                     textAlign: "start",
                   }}
                 >
-                  I’m a Frontend & WordPress Developer creating fast, responsive, and visually stunning websites.
+                  Frontend & WordPress Developer skilled in JavaScript, React, and custom theme development — certified as an IBM Full-Stack JavaScript Developer. I build fast, responsive, and scalable web solutions with clean code and modern best practices.
                 </Typography>
                 <div
                

@@ -2,8 +2,23 @@ import React from "react";
 import styles from "./TechSlider.module.css";
 
 // React Icons
-import { FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaReact, FaWordpress, FaPhp } from "react-icons/fa";
-import { SiMui } from "react-icons/si";
+import { 
+  FaHtml5, 
+  FaCss3Alt, 
+  FaJs, 
+  FaBootstrap, 
+  FaReact, 
+  FaWordpress, 
+  FaPhp, 
+  FaNode 
+} from "react-icons/fa";
+
+import { 
+  SiMui, 
+  SiNextdotjs, 
+  SiExpress, 
+  SiMongodb 
+} from "react-icons/si";
 
 function TechSlider() {
   const items = [
@@ -13,6 +28,10 @@ function TechSlider() {
     { icon: <FaBootstrap color="#ffb400" size={50} />, alt: "Bootstrap" },
     { icon: <SiMui color="#ffb400" size={50} />, alt: "MUI" },
     { icon: <FaReact color="#ffb400" size={50} />, alt: "React" },
+    { icon: <SiNextdotjs color="#ffb400" size={50} />, alt: "Next.js" },
+    { icon: <FaNode color="#ffb400" size={50} />, alt: "Node.js" },
+    { icon: <SiExpress color="#ffb400" size={50} />, alt: "Express.js" },
+    { icon: <SiMongodb color="#ffb400" size={50} />, alt: "MongoDB" },
     { icon: <FaWordpress color="#ffb400" size={50} />, alt: "WordPress" },
     { icon: <FaPhp color="#ffb400" size={50} />, alt: "PHP" },
   ];
